@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar bg-base-100 shadow-sm bg-[#15803D]">
+    <header class="mx-auto">
+        <div class="navbar bg-base-100 shadow-sm bg-[#15803D] px-12">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -24,15 +24,9 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
                     </ul>
                 </div>
                 <a class="btn btn-ghost text-xl text-white font-bold">Green Earth</a>
@@ -45,13 +39,71 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn rounded-full font-semibold border-none bg-[#FACC15] text-[#15803D]">Plan a Tree</a>
+                <a class="btn rounded-full font-semibold border-none bg-[#FACC15] text-[#15803D]">Plant a Tree</a>
             </div>
         </div>
     </header>
 
-    <section>
-        
+    <section class="grid md:grid-cols-3 items-center mx-auto md:h-[383px] bg-[#CFF0DC]">
+        <div>
+            <img class="h-[383px]" src="./assets/hero-leaf1.png" alt="">
+        </div>
+        <div class="text-center">
+            <h2 class="font-bold text-4xl text-[#1F2937]">Plant a Tree, Grow a Future</h2>
+            <p class="text-xs mt-2 text-gray-500">Join our mission to plant 1 million trees and make the Earth greener
+                for future <br>generations.</p>
+            <a class="btn mt-2 rounded-full font-semibold border-none bg-[#FACC15] text-[#15803D]">Get Involved</a>
+        </div>
+        <div>
+            <img class="h-[383px]" src="./assets/hero-leaf2.png" alt="">
+        </div>
+    </section>
+
+    <section class="p-5 bg-[#CFF0DC60] mx-auto flex justify-center">
+        <div class="h-[100%] md:w-[800px]">
+            <h3 class="text-center font-bold text-3xl">About the Campaign</h3>
+            <div class="grid md:grid-cols-2 items-center gap-5 mt-5">
+                <div>
+                    <img src="./assets/about.png" alt="">
+                </div>
+                <div>
+                    <p class="text-justify text-sm text-gray-700">Green Earth is a global tree plantation initiative
+                        dedicated to fighting climate change. Since
+                        our
+                        start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore
+                        forests, create habitats for wildlife, and combat global warming.</p>
+                    <ul class="list-disc list-inside pl-5">
+                        <li class="text-sm text-gray-700">Improvement of air quality</li>
+                        <li class="text-sm text-gray-700">Restoration of natural habitats</li>
+                        <li class="text-sm text-gray-700">Support for local communities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="md:h-[436px] mx-auto bg-[#CFF0DC] flex flex-col justify-center items-center">
+        <h3 class="text-center font-bold text-3xl">Our Impact</h3>
+        <div class="mt-10 grid md:grid-cols-3 gap-5">
+            <div class="stats shadow bg-[#FFFFFF] h-[156px] md:w-[260px]">
+                <div class="stat flex flex-col justify-center items-center">
+                    <div class="stat-value text-[#15803D] font-semibold text-4xl">500K+</div>
+                    <div class="stat-desc text-base text-[#1F2937] mt-3">Trees Planted</div>
+                </div>
+            </div>
+            <div class="stats shadow bg-[#FFFFFF] h-[156px] md:w-[260px]">
+                <div class="stat flex flex-col justify-center items-center">
+                    <div class="stat-value text-[#15803D] font-semibold text-4xl">120+</div>
+                    <div class="stat-desc text-base text-[#1F2937] mt-3">Communities Involved</div>
+                </div>
+            </div>
+            <div class="stats shadow bg-[#FFFFFF] h-[156px] md:w-[260px]">
+                <div class="stat flex flex-col justify-center items-center">
+                    <div class="stat-value text-[#15803D] font-semibold text-4xl">30+</div>
+                    <div class="stat-desc text-base text-[#1F2937] mt-3">Countries Reached</div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
